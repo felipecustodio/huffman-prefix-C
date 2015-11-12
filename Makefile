@@ -7,8 +7,8 @@ BINARY = ./build/prefix
 #debug output path and filename
 DEBUG = ./debug/prefix
 
-#sources directory
-SRC = source/tree.c source/main.c 
+#sources
+SRC = source/tree.c source/decode.c source/main.c 
 
 #includes directory
 INCLUDES = ./includes
@@ -24,7 +24,7 @@ compile:
 	$(CC) -o $(BINARY) -I$(INCLUDES) $(SRC) $(LIBS)
 
 debug:
-	$(CC) -o $(DEBUG) -I$(INCLUDES) $(SRC) $(LIBS)
+	$(CC) -o $(DEBUG) -I$(INCLUDES) $(SRC) $(FLAGS) $(LIBS)
 
 run:
 	$(BINARY)

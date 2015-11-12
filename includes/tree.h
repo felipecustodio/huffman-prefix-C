@@ -6,24 +6,24 @@
 typedef struct no NO;
 typedef struct arvore ARVORE_PREFIXO;
 
-typedef struct no {
+struct no {
 
 	char caractere;
-	//ARVORE_PREFIXO *sub_esquerda;
-	//ARVORE_PREFIXO *sub_direita;
+	NO *esquerda;
+	NO *direita;
 
-} NO;
+};
 
-typedef struct arvore {
+struct arvore {
 
 	NO *raiz;
+	int total_nos;
+	int bits;
 
-} ARVORE_PREFIXO;
+};
 
-// Funções
+// Funções de Árvore
 
-// Leitura
-char* percurso();
-int* comprimida();
-// Descompressão
-void descomprime();
+// Inicialização
+NO* cria_no();
+ARVORE_PREFIXO* cria_arvore();

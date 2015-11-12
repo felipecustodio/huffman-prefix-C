@@ -2,38 +2,21 @@
 #include <stdlib.h>
 #include "tree.h"
 
-// Funções de Leitura
+// Funções de Árvore
 
-char* percurso() {
-	char *percurso = NULL;
-	char aux;
-	int counter = 0;
-	do {
-		scanf("%c", &aux);
-		percurso = (char*)realloc(percurso, sizeof(char*) * counter + 1);
-		percurso[counter] = aux;
-		counter++/
-	} while (aux != 10);
-	return percurso;
+// Inicialização
+
+NO* cria_no() {
+	NO *novo = (NO*)malloc(sizeof(NO));
+	novo->esquerda = NULL;
+	novo->direita = NULL;
+	return (novo);
 }
 
-int *comprimida() {
-	int *comprimida = NULL;
-	char aux;
-	int counter = 0;
-	do {
-		scanf("%c", &aux);
-		comprimida = (int*)realloc(comprimida, sizeof(int) * counter + 1);
-		comprimida[counter] = aux;
-		counter++
-	} while (aux != 10);
+ARVORE_PREFIXO* cria_arvore() {
+	ARVORE_PREFIXO *arvore = (ARVORE_PREFIXO*)malloc(sizeof(ARVORE_PREFIXO));
+	arvore->raiz = cria_no();
+	arvore->total_nos = 0;
+	arvore->bits = 0;
+	return (arvore);
 }
-
-// Funções de Descompressão
-
-void descomprime();
-
-
-
-
-

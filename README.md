@@ -10,7 +10,7 @@ build, includes, source, debug
 
 ## Créditos
 
-Felipe Scrochio Custódio, Guilherme Rodrigues Vicentin
+Felipe Scrochio Custódio
 
 ## Licença
 
