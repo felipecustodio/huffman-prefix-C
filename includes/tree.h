@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 // Definições
+// Árvore de busca como lista ligada
 
 typedef struct no NO;
 typedef struct arvore ARVORE_PREFIXO;
@@ -9,8 +10,8 @@ typedef struct arvore ARVORE_PREFIXO;
 struct no {
 
 	char caractere;
-	NO *esquerda;
-	NO *direita;
+	NO *proximo;
+	NO *anterior;
 
 };
 
@@ -27,3 +28,10 @@ struct arvore {
 // Inicialização
 NO* cria_no();
 ARVORE_PREFIXO* cria_arvore();
+// Busca
+int busca(NO *raiz, int chave);
+// Número de Nós
+int conta_nos(NO *raiz);
+// Inserção
+NO* novo(char valor, NO* esquerda, NO* direita);
+int insere(NO *raiz, char valor);
