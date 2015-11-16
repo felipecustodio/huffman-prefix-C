@@ -10,8 +10,8 @@ typedef struct arvore ARVORE_PREFIXO;
 struct no {
 
 	char caractere;
-	NO *proximo;
-	NO *anterior;
+	NO *esquerda;
+	NO *direita;
 
 };
 

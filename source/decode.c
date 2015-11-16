@@ -4,43 +4,19 @@
 #include "tree.h"
 #include "decode.h"
 
-// Funções de Leitura
-// Ler percurso pré-ordem da árvore
-char* percurso() {
-	char *percurso = NULL;
-	char aux;
-	int counter = 0;
-	do {
-		scanf("%c", &aux);
-		percurso = (char*)realloc(percurso, sizeof(char*) * counter + 1);
-		percurso[counter] = aux;
-		counter++;
-	} while (aux != 10);
-	return percurso;
-}
-// Ler mensagem comprimida (bits)
-int *comprimida() {
-	int *comprimida = NULL;
-	char aux;
-	int counter = 0;
-	do {
-		scanf("%c", &aux);
-		comprimida = (int*)realloc(comprimida, sizeof(int) * counter + 1);
-		comprimida[counter] = aux;
-		counter++;
-	} while (aux != 10);
-}
-
 // Funções de Árvore
 
+// Adicionar nó recursivamente
+// Parâmetros: nó de início, nó que será adicionado, esquerda ou direita
+
+
 // Transformar entrada em árvore
-arvore_entrada arvore_entrada(char *percurso) {
+ARVORE_PREFIXO* arvore_entrada(char *percurso) {
 
 
 
 
 }
-
 
 // Funções de Descompressão
 void descomprime(int* comprimida) {
