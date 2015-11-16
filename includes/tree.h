@@ -35,3 +35,6 @@ int conta_nos(NO *raiz);
 // Inserção
 NO* novo(char valor, NO* esquerda, NO* direita);
 int insere(NO *raiz, char valor);
+// Percurso Pré-Ordem
+void __pre_order(NO *raiz);
+void pre_order(ARVORE_PREFIXO* arvore);

@@ -33,7 +33,13 @@ int *comprimida() {
 
 // Funções de Árvore
 
-void arvore_entrada(char *percurso); // transformar entrada pré-ordem em árvore
+// Transformar entrada em árvore
+arvore_entrada arvore_entrada(char *percurso) {
+
+
+
+
+}
 
 
 // Funções de Descompressão

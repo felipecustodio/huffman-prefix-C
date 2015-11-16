@@ -3,7 +3,6 @@
 #include "tree.h"
 
 // Funções de Árvore
-
 // Inicialização
 NO* cria_no() {
 	NO *novo = (NO*)malloc(sizeof(NO));
@@ -21,7 +20,6 @@ ARVORE_PREFIXO* cria_arvore() {
 }
 
 // Funções de Árvore
-
 // Busca
 int busca(NO *raiz, int chave) {
 	char resultado;
@@ -50,8 +48,7 @@ int conta_nos(NO *raiz) {
 	}
 }
 
-// Inserção
-
+// Criar nó
 NO* novo(char valor, NO* esquerda, NO* direita) { 
 	NO *novo;
 	novo = (NO*)malloc(sizeof(NO)); 
@@ -61,6 +58,7 @@ NO* novo(char valor, NO* esquerda, NO* direita) {
 	return novo; 
 } 
 
+// Inserção de nó
 int insere(NO *raiz, char valor) {
 
 	char aux;
@@ -76,5 +74,21 @@ int insere(NO *raiz, char valor) {
 	}
 
 	return raiz;
+
+}
+
+// Percurso Pré-Ordem
+void __pre_order(NO *raiz) {
+
+	if(raiz != NULL) {
+		printNode(raiz);
+		__pre_order(raiz->esquerda);
+		__pre_order(raiz->direita);
+	}
+}
+
+void pre_order(ARVORE_PREFIXO* arvore) {
+
+	__pre_order(arvore->raiz);
 
 }
