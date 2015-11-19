@@ -7,10 +7,11 @@ void ler_arquivo() {
 
 	FILE *entrada = NULL;
 	char *nome_arquivo = NULL;
+	size_t tamanho_entrada;
+	// *** passar parâmetros abaixo como endereços na main***
 	char *percurso = NULL;
 	int *mensagem = NULL;
-	size_t tamanho_entrada;
-
+	
 	printf("\tARQUIVO DE ENTRADA: ");
 	nome_arquivo = getline(stdin, &tamanho_entrada);
 

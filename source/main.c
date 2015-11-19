@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "tree.h"
 #include "decode.h"
+#include "leitura.h"
 
 int main(int argc, char const *argv[]) {
 	
@@ -18,13 +19,8 @@ int main(int argc, char const *argv[]) {
 	arvore->raiz = raiz;
 
 	// Entrada
-	percurso = percurso();
-	codigo = comprimida();
 
-	// Operações
-
-	// Impressão
-
+	// Operações de Decodificação
 
 	return 0;
 }

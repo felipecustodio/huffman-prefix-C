@@ -4,14 +4,35 @@
 #include "tree.h"
 #include "decode.h"
 
-// Funções de Árvore
+// Funções de Entrada
 
-// Adicionar nó recursivamente
-// Parâmetros: nó de início, nó que será adicionado, esquerda ou direita
+// Transformar entrada em árvore (protótipo inicial, fazer teste de mesa)
+// Testar em mesa a função insere() da árvore
+void arvore_entrada(ARVORE_PREFIXO* arvore, char *percurso, int inicio, int filho) {
+	char aux;
+	aux = percurso[inicio];
+	insere(arvore, aux);
+	if(aux == '*') {
+		arvore_entrada(percurso, inicio++, 0);
+		arvore_entrada(percurso, inicio++, 1);
+	} else {
+		return;
+	}
+}
 
+// Funções do alfabeto codificado
 
-// Transformar entrada em árvore
-ARVORE_PREFIXO* arvore_entrada(char *percurso);
+// Percorrer árvore decodificando o alfabeto
+// TAD alfabeto maybe?
+
+// Tabela
+void tabela() {
+	printf("\tcaractere\tbits\tcodificação\n");
+	printf("\t--------------------\n");
+	imprime_alfabeto();
+}
+
+void imprime_alfabeto();
 
 // Funções de Descompressão
 void descomprime(int* comprimida) {
@@ -22,25 +43,20 @@ void descomprime(int* comprimida) {
 	int total_caracteres = 0;
 	double taxa_compressao = 0;
 
-	
+	// Percorrer mensagem (passar tamanho de 'comprimida' como parametro?)
+	// Utilizar o alfabeto criado
 
 	// Cálculo da taxa de compressão
-	total_caracteres = strlen(mensagem);
+	total_caracteres = strlen(mensagem); // conferir se strlen trata o \0 no final
 	bits_descomprimidos = sizeof(char) * total_caracteres;
 	taxa_compressao = (double)total_bits/(double)bits_descomprimidos;
 	taxa_compressao = taxa_compressao * 100;
 
-	// Impressão dos dados
+	// Impressão dos dados (fazer função separada)
 	printf("\tMENSAGEM DESCOMPRIMIDA\n");
 	printf("\t%s\n", mensagem);
 	printf("\tNúmero de bits\t= %d", total_bits);
 	printf("\tNúmero de caracteres\t=  %d" total_caracteres);
-	printf("\tTaxa de compressão\t= %ld", taxa_compressao);
+	printf("\tTaxa de compressão\t= %ld%%", taxa_compressao);
 
-}
-
-// Tabela
-void tabela() {
-	printf("\tcaractere\tbits\tcodificação\n");
-	printf("\t--------------------\n");
 }

@@ -39,7 +39,7 @@ int busca(NO *raiz, int chave) {
 
 }
 
-// Número de Nós
+// Contagem de Nós (acho não precisa)
 int conta_nos(NO *raiz) {
 	if (raiz == NULL) {
 		return 0;
@@ -48,7 +48,7 @@ int conta_nos(NO *raiz) {
 	}
 }
 
-// Criar nó
+// Criar nó (fazer isso na inserção?)
 NO* novo(char valor, NO* esquerda, NO* direita) { 
 	NO *novo;
 	novo = (NO*)malloc(sizeof(NO)); 
@@ -77,11 +77,12 @@ int insere(NO *raiz, char valor) {
 
 }
 
+// Percorrer árvore / Impressão
 // Percurso Pré-Ordem
 void __pre_order(NO *raiz) {
 
 	if(raiz != NULL) {
-		printNode(raiz);
+		printf("[%c] ", raiz->caractere);
 		__pre_order(raiz->esquerda);
 		__pre_order(raiz->direita);
 	}

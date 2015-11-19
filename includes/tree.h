@@ -4,6 +4,9 @@
 // Definições
 // Árvore de busca como lista ligada
 
+#define filho_esquerdo 0
+#define filho_direito 1
+
 typedef struct no NO;
 typedef struct arvore ARVORE_PREFIXO;
 

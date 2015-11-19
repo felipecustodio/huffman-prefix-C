@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"arvore",
+				"arvore_entrada"
+			],
+			[
 				"pre",
 				"pre_ordem"
 			],
@@ -124,10 +128,10 @@
 	"buffers":
 	[
 		{
-			"file": "includes/tree.h",
+			"file": "Makefile",
 			"settings":
 			{
-				"buffer_size": 629,
+				"buffer_size": 474,
 				"line_ending": "Unix"
 			}
 		}
@@ -140,7 +144,7 @@
 	"command_palette":
 	{
 		"height": 375.0,
-		"last_filter": "free",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -278,22 +282,23 @@
 	"expanded_folders":
 	[
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo",
-		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes"
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source"
 	],
 	"file_history":
 	[
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/decode.c",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/tree.c",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/main.c",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/leitura.c",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes/tree.h",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/debug/debug.c",
 		"/home/crochi/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes/leitura.h",
 		"/home/crochi/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes/decode.h",
-		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/decode.c",
-		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/leitura.c",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/Makefile",
-		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/tree.c",
-		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes/tree.h",
 		"/home/crochi/Dropbox/compsci/SCC0202 Algoritmos 1/ABB - código/ABB.c",
-		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/main.c",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/README.md",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/LICENSE",
 		"/home/crochi/Dropbox/codes/alg1/8puzzle (2)/Makefile",
@@ -410,6 +415,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"printNode",
 			"anterior",
 			"proximo",
 			" ",
@@ -558,19 +564,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "includes/tree.h",
+					"file": "Makefile",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 629,
+						"buffer_size": 474,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								164,
-								164
+								0,
+								0
 							]
 						],
 						"settings":
@@ -578,51 +584,21 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -632,7 +608,37 @@
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
-								"bh_c_define_content"
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"c_time":
 							[
@@ -665,9 +671,9 @@
 								223,
 								11,
 								16,
-								15,
 								16,
-								0,
+								15,
+								34,
 								0,
 								0,
 								0,
@@ -681,19 +687,7 @@
 								3,
 								46
 							],
-							"dfw_mode": true,
-							"dfw_mode_prestine":
-							{
-								"fold_buttons_vis": true,
-								"gutter_vis": true,
-								"line_numbers_vis": true,
-								"minimap_vis": true,
-								"side_bar_vis": true,
-								"status_bar_vis": true,
-								"tabs_vis": true
-							},
-							"dfw_side_bar_vis": false,
-							"syntax": "Packages/C++/C++.tmLanguage"
+							"syntax": "Packages/Makefile/Makefile.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -786,12 +780,12 @@
 	"settings":
 	{
 	},
-	"show_minimap": false,
+	"show_minimap": true,
 	"show_open_files": true,
-	"show_tabs": false,
-	"side_bar_visible": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
 	"side_bar_width": 191.0,
-	"status_bar_visible": false,
+	"status_bar_visible": true,
 	"template_settings":
 	{
 	}
