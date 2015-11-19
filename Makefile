@@ -23,11 +23,11 @@ all:
 compile:
 	$(CC) -o $(BINARY) -I$(INCLUDES) $(SRC) $(LIBS)
 
-debug:
-	$(CC) -o $(DEBUG) -I$(INCLUDES) $(SRC) $(FLAGS) $(LIBS)
-
 run:
 	$(BINARY)
 
 clean:
 	rm *.o
+
+debug:
+	$(CC) -o $(DEBUG) -I$(INCLUDES) $(SRC) $(FLAGS) $(LIBS)

@@ -11,12 +11,7 @@
 
 
 // Transformar entrada em árvore
-ARVORE_PREFIXO* arvore_entrada(char *percurso) {
-
-
-
-
-}
+ARVORE_PREFIXO* arvore_entrada(char *percurso);
 
 // Funções de Descompressão
 void descomprime(int* comprimida) {
@@ -27,9 +22,10 @@ void descomprime(int* comprimida) {
 	int total_caracteres = 0;
 	double taxa_compressao = 0;
 
-	total_caracteres = strlen(mensagem);
+	
 
 	// Cálculo da taxa de compressão
+	total_caracteres = strlen(mensagem);
 	bits_descomprimidos = sizeof(char) * total_caracteres;
 	taxa_compressao = (double)total_bits/(double)bits_descomprimidos;
 	taxa_compressao = taxa_compressao * 100;

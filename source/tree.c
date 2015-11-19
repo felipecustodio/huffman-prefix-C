@@ -32,9 +32,9 @@ int busca(NO *raiz, int chave) {
 	if (resultado == chave) {
 		return resultado;
 	} else if (chave < resultado) {
-		return busca(raiz->proximo, chave);
+		return busca(raiz->direita, chave);
 	} else {
-		return busca(raiz->anterior, chave);
+		return busca(raiz->esquerda, chave);
 	}
 
 }
@@ -44,7 +44,7 @@ int conta_nos(NO *raiz) {
 	if (raiz == NULL) {
 		return 0;
 	} else {
-		return 1 + conta_nos(raiz->anterior) + conta_nos(raiz->proximo);
+		return 1 + conta_nos(raiz->esquerda) + conta_nos(raiz->direita);
 	}
 }
 
@@ -53,8 +53,8 @@ NO* novo(char valor, NO* esquerda, NO* direita) {
 	NO *novo;
 	novo = (NO*)malloc(sizeof(NO)); 
 	novo->caractere = valor; 
-	novo->anterior = esquerda; 
-	novo->proximo = direita; 
+	novo->esquerda = esquerda; 
+	novo->direita = direita; 
 	return novo; 
 } 
 
@@ -68,9 +68,9 @@ int insere(NO *raiz, char valor) {
 
 	aux = raiz->caractere;
 	if (valor < aux) {
-		raiz->anterior = insere(raiz->anterior, valor);
+		raiz->esquerda = insere(raiz->esquerda, valor);
 	} else {
-		raiz->proximo = insere(raiz->proximo, valor);
+		raiz->direita = insere(raiz->direita, valor);
 	}
 
 	return raiz;
