@@ -26,6 +26,29 @@ NO* inserir_filho(int filho, NO *no, char valor) {
 	return (novo); 
 }
 
+int adicionar_no(NO *inicio, char* percurso, int indice) {
+
+	printf("\tChamada de adicionar_no\n");
+	printf("\tPERCURSO[%d] = %c\n", indice, percurso[indice]);
+	if(inicio->esquerda == NULL) {
+		printf("\tInserindo à esquerda...\n");
+		inicio->esquerda = inserir_filho(FILHO_ESQ, inicio, percurso[indice]);
+	} else {
+		printf("\tInserindo à direita...\n");
+		inicio->direita = inserir_filho(FILHO_DIR, inicio, percurso[indice]);
+	}
+
+	if(percurso[indice] == '*') {
+		printf("\tChamando recursão para esquerda\n");
+		adicionar_no(inicio->esquerda, percurso, indice + 1);
+		printf("\tChamando recursão para direita\n");
+		adicionar_no(inicio->direita, percurso, indice + 2);
+	} else {
+		printf("\tCaractere inserido, retornando\n");
+		return (1);
+	}
+}
+
 void pre_ordem(NO *raiz) { 
 	if (raiz != NULL) { 
 		printf("%c", raiz->caractere); 

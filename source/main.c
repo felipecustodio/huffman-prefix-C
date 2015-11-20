@@ -10,25 +10,15 @@ int main(int argc, char const *argv[]) {
 	ARVORE_PREFIXO arvore;
 	arvore = criar_arvore();
 
-	printf("\t1-INSERE 2-IMPRIME 0-SAI\n");
-	int menu = 4;
-	char aux;
-	while (menu != 0) {
-		printf("\t");
-		scanf("%d", &menu);
-		switch(menu) {
-			case 1:
-				printf("\tDIGITE O CARACTERE A SER INSERIDO: ");
-				scanf("%c", &aux);
-				getchar();
+	char *percurso = NULL;
+	printf("\tPRE-ORDEM: ");
+	percurso = ler_string();
+	printf("\n\t%s\n\n", percurso);
 
-				break;
-			case 2:
-				printf("\t");
-				pre_ordem(arvore);
-				break;
-		}
-	}
+	printf("\tADICIONAR ENTRADA\n");
+	adicionar_no(arvore, percurso, 0);
+
+	pre_ordem(arvore);
 
 	return 0;
 }

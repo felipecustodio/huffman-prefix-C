@@ -8,7 +8,7 @@ BINARY = ./build/prefix
 DEBUG = ./debug/prefix
 
 #sources
-SRC = source/tree.c source/decode.c source/main.c 
+SRC = source/tree.c source/decode.c source/leitura.c source/main.c 
 
 #includes directory
 INCLUDES = ./includes
@@ -21,7 +21,7 @@ all:
 	compile run
 
 compile:
-	$(CC) -o $(BINARY) -I$(INCLUDES) $(SRC) $(LIBS)
+	$(CC) -g -o $(BINARY) -I$(INCLUDES) $(SRC) $(LIBS)
 
 run:
 	$(BINARY)

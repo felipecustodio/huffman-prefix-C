@@ -3,6 +3,7 @@
 
 // Leitura
 void ler_arquivo();
+char* ler_string();
 char* percurso();
 int* comprimida();
 
