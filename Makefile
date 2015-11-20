@@ -12,12 +12,12 @@ INCLUDES = ./includes
 
 #libraries and flags
 LIBS = -lm
-FLAGS = -Wall -g -Wextra
+FLAGS = -Wall -g
 
 all: compile run
 
 compile:
-	$(CC) -o $(BINARY) -I$(INCLUDES) $(SRC) $(LIBS)
+	$(CC) $(FLAGS) -o $(BINARY) -I$(INCLUDES) $(SRC) $(LIBS)
 
 run:
 	$(BINARY)

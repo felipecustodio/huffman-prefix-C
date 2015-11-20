@@ -24,7 +24,7 @@ void tabela() {
 void imprime_alfabeto();
 
 // Funções de Descompressão
-void descomprime(int* comprimida) {
+void descomprime(char* comprimida) {
 
 	char *mensagem = NULL;
 	int total_bits = 0;

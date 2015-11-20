@@ -8,7 +8,7 @@
 // Transformar entrada em árvore
 void arvore_entrada(ARVORE_PREFIXO* arvore, char *percurso, int inicio, int filho);
 // Descompressão
-void descomprime(int* comprimida);
+void descomprime(char* comprimida);
 // Auxiliar / Impressão
 void tabela();
 

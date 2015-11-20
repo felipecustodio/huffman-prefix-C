@@ -2,9 +2,11 @@
 #define __LEITURA_H
 
 // Leitura
-void ler_arquivo();
 char* ler_string();
 char* percurso();
-int* comprimida();
+char* comprimida();
+
+// Arquivo
+void ler_arquivo(char **preordem, char **mensagem);
 
 #endif

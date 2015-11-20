@@ -6,12 +6,12 @@
 
 // Funções de leitura dentro do arquivo
 // Ler percurso pré-ordem da árvore
-char* percurso() {
+char* percurso(FILE *arquivo) {
 	char *percurso = NULL;
 	char aux;
 	int contador = 0;
 	do {
-		scanf("%c", &aux);
+		fscanf(arquivo, "%c", &aux);
 		percurso = (char*)realloc(percurso, sizeof(char*) * contador + 1);
 		percurso[contador] = aux;
 		contador++;
@@ -19,13 +19,13 @@ char* percurso() {
 	return percurso;
 }
 // Ler mensagem comprimida (bits)
-int *comprimida() {
-	int *comprimida = NULL;
+char *comprimida(FILE *arquivo) {
+	char *comprimida = NULL;
 	char aux;
 	int contador = 0;
 	do {
-		scanf("%c", &aux);
-		comprimida = (int*)realloc(comprimida, sizeof(int) * contador + 1);
+		fscanf(arquivo, "%c", &aux);
+		comprimida = (char*)realloc(comprimida, sizeof(char) * contador + 1);
 		comprimida[contador] = aux;
 		contador++;
 	} while (aux != 10);
@@ -51,5 +51,24 @@ char* ler_string() {
 	string[contador-1] = '\0';
 
 	return string;
+
+}
+
+void ler_arquivo(char **preordem, char **mensagem) {
+
+	char *nome_arquivo = NULL;
+	printf("\tDigite o nome do arquivo a ser lido: ");
+	nome_arquivo = ler_string();
+
+	FILE *arquivo = fopen(nome_arquivo, "r");
+	if (arquivo == NULL) {
+		printf("\tO arquivo não pôde ser aberto.\n");
+		exit(0);
+	}
+	*(preordem) = percurso(arquivo);
+	*(mensagem) = comprimida(arquivo);
+	fclose(arquivo);
+	printf("\tLeitura concluída\n");
+	free(nome_arquivo);
 
 }
