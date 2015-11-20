@@ -1,14 +1,14 @@
 #ifndef __DECODE_H
 #define __DECODE_H
 
-#include "tree.h"
+// Alfabeto Decodificado
 
 // Funções de Decodificação
  
 // Transformar entrada em árvore
-ARVORE_PREFIXO* arvore_entrada(char *percurso);
+void arvore_entrada(ARVORE_PREFIXO* arvore, char *percurso, int inicio, int filho);
 // Descompressão
-void descomprime();
+void descomprime(int* comprimida);
 // Auxiliar / Impressão
 void tabela();
 

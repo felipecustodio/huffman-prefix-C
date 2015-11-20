@@ -7,20 +7,28 @@
 int main(int argc, char const *argv[]) {
 	
 	// Definições
-	ARVORE_PREFIXO *arvore = NULL;
-	NO *raiz = NULL;
+	ARVORE_PREFIXO arvore;
+	arvore = criar_arvore();
 
-	char *percurso = NULL;
-	int *codigo = NULL;
+	printf("\t1-INSERE 2-IMPRIME 0-SAI\n");
+	int menu = 4;
+	char aux;
+	while (menu != 0) {
+		printf("\t");
+		scanf("%d", &menu);
+		switch(menu) {
+			case 1:
+				printf("\tDIGITE O CARACTERE A SER INSERIDO: ");
+				scanf("%c", &aux);
+				getchar();
 
-	// Inicialização da Árvore
-	arvore = cria_arvore();
-	raiz = cria_no();
-	arvore->raiz = raiz;
-
-	// Entrada
-
-	// Operações de Decodificação
+				break;
+			case 2:
+				printf("\t");
+				pre_ordem(arvore);
+				break;
+		}
+	}
 
 	return 0;
 }

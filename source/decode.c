@@ -8,17 +8,6 @@
 
 // Transformar entrada em árvore (protótipo inicial, fazer teste de mesa)
 // Testar em mesa a função insere() da árvore
-void arvore_entrada(ARVORE_PREFIXO* arvore, char *percurso, int inicio, int filho) {
-	char aux;
-	aux = percurso[inicio];
-	insere(arvore, aux);
-	if(aux == '*') {
-		arvore_entrada(percurso, inicio++, 0);
-		arvore_entrada(percurso, inicio++, 1);
-	} else {
-		return;
-	}
-}
 
 // Funções do alfabeto codificado
 
@@ -29,7 +18,7 @@ void arvore_entrada(ARVORE_PREFIXO* arvore, char *percurso, int inicio, int filh
 void tabela() {
 	printf("\tcaractere\tbits\tcodificação\n");
 	printf("\t--------------------\n");
-	imprime_alfabeto();
+	//imprime_alfabeto();
 }
 
 void imprime_alfabeto();
@@ -56,7 +45,7 @@ void descomprime(int* comprimida) {
 	printf("\tMENSAGEM DESCOMPRIMIDA\n");
 	printf("\t%s\n", mensagem);
 	printf("\tNúmero de bits\t= %d", total_bits);
-	printf("\tNúmero de caracteres\t=  %d" total_caracteres);
-	printf("\tTaxa de compressão\t= %ld%%", taxa_compressao);
+	printf("\tNúmero de caracteres\t=  %d", total_caracteres);
+	printf("\tTaxa de compressão\t= %lf%%", taxa_compressao);
 
 }

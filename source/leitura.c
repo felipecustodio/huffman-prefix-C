@@ -3,28 +3,6 @@
 #include "leitura.h"
 
 // Funções de leitura de arquivo
-void ler_arquivo() {
-
-	FILE *entrada = NULL;
-	char *nome_arquivo = NULL;
-	size_t tamanho_entrada;
-	// *** passar parâmetros abaixo como endereços na main***
-	char *percurso = NULL;
-	int *mensagem = NULL;
-	
-	printf("\tARQUIVO DE ENTRADA: ");
-	nome_arquivo = getline(stdin, &tamanho_entrada);
-
-	entrada = fopen(nome_arquivo, "r");
-	
-	do {
-		
-	} while (feof(entrada));
-
-}
-
-// *** trocar scanf por fscanf *** 
-
 
 // Funções de leitura dentro do arquivo
 // Ler percurso pré-ordem da árvore
