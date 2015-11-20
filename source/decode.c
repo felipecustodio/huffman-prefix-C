@@ -4,16 +4,6 @@
 #include "tree.h"
 #include "decode.h"
 
-// Funções de Entrada
-
-// Transformar entrada em árvore (protótipo inicial, fazer teste de mesa)
-// Testar em mesa a função insere() da árvore
-
-// Funções do alfabeto codificado
-
-// Percorrer árvore decodificando o alfabeto
-// TAD alfabeto maybe?
-
 // Tabela
 void tabela() {
 	printf("\tcaractere\tbits\tcodificação\n");
@@ -32,16 +22,24 @@ void descomprime(char* comprimida) {
 	int total_caracteres = 0;
 	double taxa_compressao = 0;
 
-	// Percorrer mensagem (passar tamanho de 'comprimida' como parametro?)
-	// Utilizar o alfabeto criado
+	/*
+	Comece pela raiz da árvore. 
+	 Repita até alcançar um nó externo da árvore: 
+		o Leia um bit da mensagem. 
+		o Vá pela aresta da esquerda se o bit for 0; vá pela aresta da direita se for 1. 
+	 Imprima o caractere que está no nó externo. 
+	*/
+
+
+
 
 	// Cálculo da taxa de compressão
-	total_caracteres = strlen(mensagem); // conferir se strlen trata o \0 no final
+	total_caracteres = strlen(mensagem);
 	bits_descomprimidos = sizeof(char) * total_caracteres;
 	taxa_compressao = (double)total_bits/(double)bits_descomprimidos;
 	taxa_compressao = taxa_compressao * 100;
 
-	// Impressão dos dados (fazer função separada)
+	// Impressão dos dados
 	printf("\tMENSAGEM DESCOMPRIMIDA\n");
 	printf("\t%s\n", mensagem);
 	printf("\tNúmero de bits\t= %d", total_bits);

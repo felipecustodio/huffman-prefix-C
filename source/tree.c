@@ -50,6 +50,14 @@ int adicionar_no(NO *inicio, char* percurso, int indice) {
 	}
 }
 
+int no_externo(NO* teste) {
+	if(teste->esquerda == NULL && teste->direita == NULL) {
+		return (1);
+	} else {
+		return (0);
+	}
+}
+
 void pre_ordem(NO *raiz) { 
 	if (raiz != NULL) { 
 		printf("%c", raiz->caractere); 

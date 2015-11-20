@@ -13,10 +13,14 @@ int main(int argc, char const *argv[]) {
 	char *percurso = NULL;
 	char *mensagem = NULL;
 	
+	// Leitura
 	ler_arquivo(&percurso, &mensagem);
 	printf("\t%s\n\t%s\n", percurso, mensagem);
 
+	// Criar árvore a partir da entrada
 	adicionar_no(arvore, percurso, 0);
+
+	// Decodificar mensagem
 
 	pre_ordem(arvore);
 
