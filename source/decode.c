@@ -97,5 +97,4 @@ void descomprime(ARVORE_PREFIXO arvore, char* comprimida) {
 	printf("\tNúmero de bits\t= %d\n", total_bits);
 	printf("\tNúmero de caracteres\t= %d\n", total_caracteres);
 	printf("\tTaxa de compressão\t= %lf%%\n", taxa_compressao);
-
 }

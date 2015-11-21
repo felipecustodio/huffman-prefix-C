@@ -4,6 +4,7 @@
 		"selected_items":
 		[
 			[
+<<<<<<< HEAD
 				"no",
 				"no_externo	(tree.c)"
 			],
@@ -12,6 +13,8 @@
 				"comprimida"
 			],
 			[
+=======
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 				"ler_",
 				"ler_arquivo	(leitura.h)"
 			],
@@ -156,10 +159,17 @@
 	"buffers":
 	[
 		{
+<<<<<<< HEAD
 			"file": "includes/tree.h",
 			"settings":
 			{
 				"buffer_size": 398,
+=======
+			"file": "source/tree.c",
+			"settings":
+			{
+				"buffer_size": 1743,
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 				"line_ending": "Unix"
 			}
 		},
@@ -167,7 +177,11 @@
 			"file": "source/decode.c",
 			"settings":
 			{
+<<<<<<< HEAD
 				"buffer_size": 2648,
+=======
+				"buffer_size": 1205,
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 				"line_ending": "Unix"
 			}
 		}
@@ -179,6 +193,7 @@
 	"build_varint": "",
 	"command_palette":
 	{
+<<<<<<< HEAD
 		"height": 150.0,
 		"last_filter": "destory",
 		"selected_items":
@@ -188,6 +203,13 @@
 				"Origami: Destroy Current Pane"
 			],
 			[
+=======
+		"height": 242.0,
+		"last_filter": "block",
+		"selected_items":
+		[
+			[
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 				"block",
 				"Toggle Block Comment"
 			],
@@ -332,6 +354,7 @@
 	],
 	"file_history":
 	[
+<<<<<<< HEAD
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/main.c",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/Makefile",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes/decode.h",
@@ -340,15 +363,31 @@
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/tree.c",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/leitura.c",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes/tree.h",
+=======
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes/decode.h",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/leitura.c",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/decode.c",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/tree.c",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes/tree.h",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/main.c",
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes/leitura.h",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/debug/arquivos_entrada/abra.pre",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/debug/arquivos_entrada/yabba.pre",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/debug/arquivos_entrada/pi.pre",
+<<<<<<< HEAD
+=======
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/Makefile",
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 		"/home/crochi/Dropbox/codes/alg1/projeto01-mini-google/Makefile",
 		"/home/crochi/Dropbox/codes/readString.c",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/tree (Cerberus's conflicted copy 2015-11-19).c",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/debug/debug.c",
 		"/home/crochi/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+<<<<<<< HEAD
+=======
+		"/home/crochi/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 		"/home/crochi/Dropbox/compsci/SCC0202 Algoritmos 1/ABB - código/ABB.c",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/README.md",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/LICENSE",
@@ -450,7 +489,11 @@
 	],
 	"find":
 	{
+<<<<<<< HEAD
 		"height": 39.0
+=======
+		"height": 37.0
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 	},
 	"find_in_files":
 	{
@@ -461,12 +504,18 @@
 	},
 	"find_state":
 	{
+<<<<<<< HEAD
 		"case_sensitive": true,
 		"find_history":
 		[
 			"bits",
 			"mensagem",
 			"MENSAGEM",
+=======
+		"case_sensitive": false,
+		"find_history":
+		[
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 			"mensagem",
 			"MENSAGEM",
 			"mensagem",
@@ -591,7 +640,14 @@
 			"bronze",
 			"Bronze",
 			"bronze",
+<<<<<<< HEAD
 			"atual.prata"
+=======
+			"atual.prata",
+			"prata",
+			"comparedronze",
+			"prata"
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -615,19 +671,32 @@
 			[
 				{
 					"buffer": 0,
+<<<<<<< HEAD
 					"file": "includes/tree.h",
 					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 398,
+=======
+					"file": "source/tree.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1743,
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								53,
 								53
+=======
+								1324,
+								1324
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 							]
 						],
 						"settings":
@@ -635,21 +704,48 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+<<<<<<< HEAD
+=======
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+<<<<<<< HEAD
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
+=======
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+<<<<<<< HEAD
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -660,11 +756,19 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+=======
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
+<<<<<<< HEAD
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
@@ -675,11 +779,14 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+=======
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
+<<<<<<< HEAD
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -695,6 +802,24 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 189.0,
+=======
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 819.0,
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -706,15 +831,24 @@
 					"semi_transient": true,
 					"settings":
 					{
+<<<<<<< HEAD
 						"buffer_size": 2648,
+=======
+						"buffer_size": 1205,
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								1575,
 								1575
+=======
+								0,
+								0
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 							]
 						],
 						"settings":
@@ -722,21 +856,48 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+<<<<<<< HEAD
+=======
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+<<<<<<< HEAD
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
+=======
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+<<<<<<< HEAD
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -747,11 +908,19 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+=======
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
+<<<<<<< HEAD
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
@@ -762,11 +931,14 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+=======
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
+<<<<<<< HEAD
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -777,18 +949,42 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content"
+=======
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 							],
 							"syntax": "Packages/C++/C.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
+<<<<<<< HEAD
 						"translation.y": 882.0,
+=======
+						"translation.y": 0.0,
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				}
 			]
+<<<<<<< HEAD
+=======
+		},
+		{
+			"sheets":
+			[
+			]
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 		}
 	],
 	"incremental_find":
@@ -808,11 +1004,24 @@
 				0,
 				1,
 				1
+<<<<<<< HEAD
+=======
+			],
+			[
+				1,
+				0,
+				2,
+				1
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 			]
 		],
 		"cols":
 		[
 			0.0,
+<<<<<<< HEAD
+=======
+			0.556101792944,
+>>>>>>> ef117d04a09fc1ed1ce79b6b93cb1e18ccb21347
 			1.0
 		],
 		"rows":
