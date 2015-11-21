@@ -26,7 +26,7 @@ NO* inserir_filho(int filho, NO *no, char valor) {
 	return (novo); 
 }
 
-// **************
+// *******transformar entrada em arvore*******
 int adicionar_no(NO *inicio, char* percurso, int indice) {
 
 	printf("\tChamada de adicionar_no\n");
@@ -40,12 +40,9 @@ int adicionar_no(NO *inicio, char* percurso, int indice) {
 	}
 
 	if(percurso[indice] == '*') {
-		printf("\tChamando recursão para esquerda\n");
-		adicionar_no(inicio->esquerda, percurso, indice + 1);
-		printf("\tChamando recursão para direita\n");
-		adicionar_no(inicio->direita, percurso, indice + 1);
+		adicionar_no(inicio->esquerda, percurso, ++indice);
+		adicionar_no(inicio->direita, percurso, ++indice);
 	} else {
-		printf("\tCaractere inserido, retornando\n");
 		return (1);
 	}
 }

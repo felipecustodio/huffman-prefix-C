@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include "leitura.h"
 
-// Funções de leitura de arquivo
-
 // Funções de leitura dentro do arquivo
 // Ler percurso pré-ordem da árvore
 char* percurso(FILE *arquivo) {
@@ -32,28 +30,24 @@ char *comprimida(FILE *arquivo) {
 	return comprimida;
 }
 
+// Função auxiliar para ler strings
 char* ler_string() {
 	
 	char* string = NULL;
 	char valor = '@';
 	int contador = 0;
-
 	while (valor != 10) {
-
 		scanf("%c", &valor);
 		string = (char*)realloc(string, sizeof(char) * contador + 1);
-		
 		string[contador] = valor;		
 		contador++;
-
 	}
-
 	string[contador-1] = '\0';
-
 	return string;
 
 }
 
+// Abrir e ler arquivo de entrada
 void ler_arquivo(char **preordem, char **mensagem) {
 
 	char *nome_arquivo = NULL;
@@ -68,7 +62,6 @@ void ler_arquivo(char **preordem, char **mensagem) {
 	*(preordem) = percurso(arquivo);
 	*(mensagem) = comprimida(arquivo);
 	fclose(arquivo);
-	printf("\tLeitura concluída\n");
 	free(nome_arquivo);
 
 }

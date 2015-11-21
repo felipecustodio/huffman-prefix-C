@@ -31,8 +31,6 @@ void descomprime(char* comprimida) {
 	*/
 
 
-
-
 	// Cálculo da taxa de compressão
 	total_caracteres = strlen(mensagem);
 	bits_descomprimidos = sizeof(char) * total_caracteres;

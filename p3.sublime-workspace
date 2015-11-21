@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"ler_",
+				"ler_arquivo	(leitura.h)"
+			],
+			[
+				"nome",
+				"nome_arquivo"
+			],
+			[
 				"FILHO",
 				"FILHO_ESQ"
 			],
@@ -140,26 +148,18 @@
 	"buffers":
 	[
 		{
-			"file": "source/main.c",
-			"settings":
-			{
-				"buffer_size": 424,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "source/tree.c",
 			"settings":
 			{
-				"buffer_size": 1567,
+				"buffer_size": 1743,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "includes/tree.h",
+			"file": "source/decode.c",
 			"settings":
 			{
-				"buffer_size": 418,
+				"buffer_size": 1205,
 				"line_ending": "Unix"
 			}
 		}
@@ -171,10 +171,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 375.0,
-		"last_filter": "right",
+		"height": 242.0,
+		"last_filter": "block",
 		"selected_items":
 		[
+			[
+				"block",
+				"Toggle Block Comment"
+			],
 			[
 				"right",
 				"Origami: Create Pane on the Right"
@@ -230,10 +234,6 @@
 			[
 				"origamirigh",
 				"Origami: Create Pane on the Right"
-			],
-			[
-				"block",
-				"Toggle Block Comment"
 			],
 			[
 				"git stat",
@@ -320,15 +320,19 @@
 	],
 	"file_history":
 	[
-		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes/leitura.h",
-		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/Makefile",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes/decode.h",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/leitura.c",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/decode.c",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/tree.c",
-		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/leitura.c",
-		"/home/crochi/Dropbox/codes/readString.c",
-		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes/decode.h",
-		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/main.c",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes/tree.h",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/main.c",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes/leitura.h",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/debug/arquivos_entrada/abra.pre",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/debug/arquivos_entrada/yabba.pre",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/debug/arquivos_entrada/pi.pre",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/Makefile",
+		"/home/crochi/Dropbox/codes/alg1/projeto01-mini-google/Makefile",
+		"/home/crochi/Dropbox/codes/readString.c",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/tree (Cerberus's conflicted copy 2015-11-19).c",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/debug/debug.c",
 		"/home/crochi/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
@@ -378,7 +382,6 @@
 		"/home/crochi/Dropbox/codes/alg1/projeto01-mini-google/includes/google.h",
 		"/home/crochi/Dropbox/codes/alg1/backup_minigoogle/projeto01-mini-google/src/google.c",
 		"/home/crochi/Dropbox/codes/alg1/projeto01-mini-google/debug/input_test.c",
-		"/home/crochi/Dropbox/codes/alg1/projeto01-mini-google/Makefile",
 		"/home/crochi/Dropbox/codes/alg1/projeto01-mini-google/build/googlebot.csv",
 		"/home/crochi/Dropbox/codes/alg1/projeto01-mini-google/src/input.c",
 		"/home/crochi/Dropbox/codes/alg1/projeto01-mini-google/googlebot.csv",
@@ -449,6 +452,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"mensagem",
+			"MENSAGEM",
+			"mensagem",
+			"src",
 			"counter",
 			"value",
 			"\"",
@@ -572,11 +579,7 @@
 			"atual.prata",
 			"prata",
 			"comparedronze",
-			"prata",
-			"b",
-			"ouro",
-			"atual",
-			"medalBoard.countries"
+			"prata"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -595,24 +598,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "source/main.c",
+					"file": "source/tree.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 424,
+						"buffer_size": 1743,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								351,
-								351
+								1324,
+								1324
 							]
 						],
 						"settings":
@@ -620,61 +623,149 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 819.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "source/decode.c",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1205,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
-								"bh_default_content"
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"syntax": "Packages/C++/C.tmLanguage",
 							"translate_tabs_to_spaces": false
@@ -685,236 +776,12 @@
 					},
 					"stack_index": 0,
 					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "source/tree.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1567,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								242,
-								242
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"syntax": "Packages/C++/C.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 2,
-					"file": "includes/tree.h",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 418,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								308,
-								308
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"c_time":
-							[
-								128,
-								3,
-								99,
-								100,
-								97,
-								116,
-								101,
-								116,
-								105,
-								109,
-								101,
-								10,
-								100,
-								97,
-								116,
-								101,
-								116,
-								105,
-								109,
-								101,
-								10,
-								113,
-								0,
-								67,
-								10,
-								7,
-								223,
-								11,
-								19,
-								11,
-								53,
-								14,
-								0,
-								0,
-								0,
-								113,
-								1,
-								133,
-								113,
-								2,
-								82,
-								113,
-								3,
-								46
-							],
-							"dfw_side_bar_vis": true,
-							"syntax": "Packages/C++/C++.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -946,7 +813,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.556101792944,
 			1.0
 		],
 		"rows":
