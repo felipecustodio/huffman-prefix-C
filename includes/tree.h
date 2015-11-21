@@ -15,9 +15,8 @@ struct no {
 	NO *direita; 
 };
 
-NO* criar_arvore(void);
-NO* inserir_filho(int filho, NO *no, char valor);
-int adicionar_no(NO *inicio, char* percurso, int indice);
+void criar_no(NO **novo);
+int adicionar_no(NO** inicio, char* percurso, int indice);
 int no_externo(NO* teste);
 void pre_ordem(NO *raiz);
 void apagar_arvore(NO *raiz);

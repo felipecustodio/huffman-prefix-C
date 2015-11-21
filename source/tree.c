@@ -2,48 +2,33 @@
 #include <stdlib.h>
 #include "tree.h"
 
-NO* criar_arvore(void) { 
-	NO *raiz = (NO*)malloc(sizeof(NO)); 
-	if (raiz != NULL) { 
-		raiz->esquerda = NULL; 
-		raiz->direita = NULL; 
+void criar_no(NO **novo) { 
+	(*novo) = (NO*)malloc(sizeof(NO)); 
+	if ((*novo) != NULL) { 
+		(*novo)->esquerda = NULL; 
+		(*novo)->direita = NULL; 
 	} 
-	return (raiz); 
 }
 
-NO* inserir_filho(int filho, NO *no, char valor) { 
-	NO *novo = (NO*)malloc(sizeof(NO)); 
-	if (novo != NULL) { 
-		novo->direita = NULL; 
-		novo->esquerda = NULL; 
-		novo->caractere = valor; 
-		if (filho == FILHO_ESQ) { 
-			no->esquerda = novo; 
-		} else { 
-			no->direita = novo; 
-		} 
-	} 
-	return (novo); 
-}
+// transformar entrada em arvore
+int adicionar_no(NO **inicio, char* percurso, int indice) {
 
-// *******transformar entrada em arvore*******
-int adicionar_no(NO *inicio, char* percurso, int indice) {
+	int aux;
 
-	printf("\tChamada de adicionar_no\n");
-	printf("\tPERCURSO[%d] = %c\n", indice, percurso[indice]);
-	if(inicio->esquerda == NULL) {
-		printf("\tInserindo à esquerda...\n");
-		inicio->esquerda = inserir_filho(FILHO_ESQ, inicio, percurso[indice]);
+	if((*inicio) == NULL) {
+		(*inicio) = (NO*)malloc(sizeof(NO));
+		(*inicio)->direita = NULL;
+		(*inicio)->esquerda = NULL;
+		(*inicio)->caractere = percurso[indice];
 	} else {
-		printf("\tInserindo à direita...\n");
-		inicio->direita = inserir_filho(FILHO_DIR, inicio, percurso[indice]);
+		(*inicio)->caractere = percurso[indice];
 	}
 
 	if(percurso[indice] == '*') {
-		adicionar_no(inicio->esquerda, percurso, ++indice);
-		adicionar_no(inicio->direita, percurso, ++indice);
+		aux = adicionar_no(&((*inicio)->esquerda), percurso, ++indice);
+		adicionar_no(&((*inicio)->direita), percurso, ++aux);
 	} else {
-		return (1);
+		return (indice);
 	}
 }
 

@@ -3,8 +3,7 @@
 
 // Leitura
 char* ler_string();
-char* percurso();
-char* comprimida();
+char* ler_string_arquivo();
 
 // Arquivo
 void ler_arquivo(char **preordem, char **mensagem);

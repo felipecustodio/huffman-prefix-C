@@ -8,7 +8,7 @@ int main(int argc, char const *argv[]) {
 	
 	// Definições
 	ARVORE_PREFIXO arvore;
-	arvore = criar_arvore();
+	criar_no(&arvore);
 
 	char *percurso = NULL;
 	char *mensagem = NULL;
@@ -18,10 +18,9 @@ int main(int argc, char const *argv[]) {
 	printf("\t%s\n\t%s\n", percurso, mensagem);
 
 	// Criar árvore a partir da entrada
-	adicionar_no(arvore, percurso, 0);
+	adicionar_no(&arvore, percurso, 0);
 
-	// Decodificar mensagem
-
+	// Imprimir árvore para teste
 	pre_ordem(arvore);
 
 	return 0;
