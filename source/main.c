@@ -14,6 +14,7 @@ int main(int argc, char const *argv[]) {
 	char *mensagem = NULL;
 	
 	// Leitura
+	printf("\t./entradas/nome_do_arquivo.pre\n");
 	ler_arquivo(&percurso, &mensagem);
 
 	// Criar árvore a partir da entrada
