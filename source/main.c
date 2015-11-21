@@ -15,13 +15,18 @@ int main(int argc, char const *argv[]) {
 	
 	// Leitura
 	ler_arquivo(&percurso, &mensagem);
-	printf("\t%s\n\t%s\n", percurso, mensagem);
 
 	// Criar árvore a partir da entrada
 	adicionar_no(&arvore, percurso, 0);
 
-	// Imprimir árvore para teste
-	pre_ordem(arvore);
+	// Decodificar alfabeto
+
+	// Descomprimir mensagem
+
+	// Liberar memória
+	apagar_arvore(arvore);
+	free(percurso);
+	free(mensagem);
 
 	return 0;
 }
