@@ -54,41 +54,41 @@ void descomprime(ARVORE_PREFIXO arvore, char* comprimida) {
 	int total_caracteres = 0;
 	double taxa_compressao = 0;
 
-	/*
-	Comece pela raiz da árvore. 
-	 Repita até alcançar um nó externo da árvore: 
-		o Leia um bit da mensagem. 
-		o Vá pela aresta da esquerda se o bit for 0; vá pela aresta da direita se for 1. 
-	 Imprima o caractere que está no nó externo. 
-	*/
-
+	// Algoritmo de descompressão da mensagem
 	NO *atual = arvore;
 	int i = 0;
 	char bit;
+	// Percorrer a mensagem comprimida
 	while(i < strlen(comprimida)) {
+		// Alcançar nó externo da árvore
 		while(!(no_externo(atual))) {
 			bit = comprimida[i];
+			// 0 - Vá para a esquerda
 			if (bit == '0') {
 				atual = atual->esquerda;
 				i++;
+			// 1 - Vá para a direita
 			} else if (bit == '1') {
 				atual = atual->direita;
 				i++;
 			}
 		}
+		// Inserir caractere do nó externo na mensagem descomprimida
 		descomprimida = (char*)realloc(descomprimida, sizeof(char) * total_caracteres + 1);
 		descomprimida[total_caracteres] = atual->caractere;
 		total_caracteres++;
+		// Resetar nó auxiliar para a raiz
 		atual = arvore;
+
 	}
 
+	// Transformar mensagem descomprimida em string
 	descomprimida[total_caracteres] = '\0';
 
 	// Cálculo da taxa de compressão
-	// total_caracteres = strlen(descomprimida);
 	total_bits = total_caracteres * 8;
-	bits_descomprimidos = sizeof(char) * total_caracteres;
-	taxa_compressao = (double)total_bits/(double)bits_descomprimidos;
+	bits_descomprimidos = sizeof(char) * strlen(comprimida);
+	taxa_compressao = (double)bits_descomprimidos/(double)total_bits;
 	taxa_compressao = taxa_compressao * 100;
 
 	// Impressão dos dados
