@@ -62,31 +62,31 @@ void descomprime(ARVORE_PREFIXO arvore, char* comprimida) {
 	 Imprima o caractere que está no nó externo. 
 	*/
 
-	// *** tentar fazer isso recursivamente, parece mais viável
-	// *** nó externo só acha o último nó
-	int i;
-	int contador = 0;
-	NO *no_atual = NULL;
-	no_atual = arvore;
-	for (i = 0; i < (strlen(comprimida)); i++) {
-		while(!no_externo(no_atual)) {
-			if(comprimida[i] == '1') {
-				no_atual = no_atual->direita;
+	NO *atual = arvore;
+	int i = 0;
+	char bit;
+	while(i < strlen(comprimida)) {
+		while(!(no_externo(atual))) {
+			bit = comprimida[i];
+			if (bit == '0') {
+				atual = atual->esquerda;
 				i++;
-			} else if (comprimida[i] == '0') {
-				no_atual = no_atual->esquerda;
+			} else if (bit == '1') {
+				atual = atual->direita;
 				i++;
 			}
 		}
-
-		descomprimida = (char*)realloc(descomprimida, sizeof(char) * contador + 1);
-		descomprimida[contador] = no_atual->caractere;
-		contador++;
-
+		descomprimida = (char*)realloc(descomprimida, sizeof(char) * total_caracteres + 1);
+		descomprimida[total_caracteres] = atual->caractere;
+		total_caracteres++;
+		atual = arvore;
 	}
 
+	descomprimida[total_caracteres] = '\0';
+
 	// Cálculo da taxa de compressão
-	total_caracteres = strlen(descomprimida);
+	// total_caracteres = strlen(descomprimida);
+	total_bits = total_caracteres * 8;
 	bits_descomprimidos = sizeof(char) * total_caracteres;
 	taxa_compressao = (double)total_bits/(double)bits_descomprimidos;
 	taxa_compressao = taxa_compressao * 100;
@@ -94,7 +94,9 @@ void descomprime(ARVORE_PREFIXO arvore, char* comprimida) {
 	// Impressão dos dados
 	printf("\tMENSAGEM DESCOMPRIMIDA\n");
 	printf("\t%s\n", descomprimida);
-	printf("\tNúmero de bits\t= %d\n", total_bits);
-	printf("\tNúmero de caracteres\t= %d\n", total_caracteres);
-	printf("\tTaxa de compressão\t= %lf%%\n", taxa_compressao);
+	printf("\tNúmero de bits = %d\n", bits_descomprimidos);
+	printf("\tNúmero de caracteres = %d\n", total_caracteres);
+	printf("\tTaxa de compressão = %lf%%\n", taxa_compressao);
+	free(descomprimida);
+	
 }
