@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 #include "tree.h"
 
 void criar_no(NO **novo) { 
@@ -11,15 +13,14 @@ void criar_no(NO **novo) {
 }
 
 // transformar entrada em arvore
-int adicionar_no(NO **inicio, char* percurso, int indice) {
+int adicionar_no(NO **inicio, char *percurso, int indice) {
 
 	int aux; // controlador do índice dentro das chamadas recursivas
-
 	if((*inicio) == NULL) {
 		(*inicio) = (NO*)malloc(sizeof(NO));
 		(*inicio)->direita = NULL;
 		(*inicio)->esquerda = NULL;
-		(*inicio)->caractere = percurso[indice];
+		(*inicio)->caractere = percurso[indice]; 
 	} else {
 		(*inicio)->caractere = percurso[indice];
 	}
@@ -30,10 +31,9 @@ int adicionar_no(NO **inicio, char* percurso, int indice) {
 	} else {
 		return (indice);
 	}
-
 }
 
-int no_externo(NO* teste) {
+int no_externo(NO *teste) {
 	if((teste != NULL) && (teste->esquerda == NULL) && (teste->direita == NULL)) {
 		return (1);
 	} else {

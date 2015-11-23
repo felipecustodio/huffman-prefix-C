@@ -15,6 +15,7 @@ char* ler_string_arquivo(FILE *arquivo) {
 		string[contador] = aux;
 		contador++;
 	}
+
 	string[contador-1] = '\0';
 	return string;
 	
@@ -32,6 +33,7 @@ char* ler_string() {
 		string[contador] = valor;		
 		contador++;
 	}
+
 	string[contador-1] = '\0';
 	return string;
 

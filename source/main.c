@@ -6,7 +6,7 @@
 
 int main(int argc, char const *argv[]) {
 	
-	system("clear"); // Limpar terminal após compilação
+	// system("clear"); // Limpar terminal após compilação
 	// Definições
 	ARVORE_PREFIXO arvore;
 	criar_no(&arvore);

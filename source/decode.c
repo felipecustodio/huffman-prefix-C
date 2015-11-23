@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
+#include <ctype.h>
 #include "tree.h"
 #include "decode.h"
 
@@ -27,7 +28,7 @@ double bits(int codigo) {
 
 // Tabela
 void tabela() {
-	printf("\tcaractere bits codificação\n");
+	printf("\n\tcaractere bits codificação\n");
 	printf("\t--------------------------\n");
 }
 
@@ -74,6 +75,7 @@ void descomprime(ARVORE_PREFIXO arvore, char* comprimida) {
 			}
 		}
 		// Inserir caractere do nó externo na mensagem descomprimida
+		printf("%c", atual->caractere);
 		descomprimida = (char*)realloc(descomprimida, sizeof(char) * total_caracteres + 1);
 		descomprimida[total_caracteres] = atual->caractere;
 		total_caracteres++;
@@ -92,11 +94,11 @@ void descomprime(ARVORE_PREFIXO arvore, char* comprimida) {
 	taxa_compressao = taxa_compressao * 100;
 
 	// Impressão dos dados
-	printf("\tMENSAGEM DESCOMPRIMIDA\n");
-	printf("\t%s\n", descomprimida);
+	printf("\n\t%s\n", descomprimida);
 	printf("\tNúmero de bits = %d\n", bits_descomprimidos);
 	printf("\tNúmero de caracteres = %d\n", total_caracteres);
-	printf("\tTaxa de compressão = %lf%%\n", taxa_compressao);
+	printf("\tTaxa de compressão = %lf%%\n\n", taxa_compressao);
+	
 	free(descomprimida);
 	
 }

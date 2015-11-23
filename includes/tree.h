@@ -6,6 +6,10 @@
 #define FILHO_ESQ 0
 #define FILHO_DIR 1
 
+// Auxiliares de caractere
+#define ENTER 10
+#define SPACE 32
+
 typedef struct no NO; 
 typedef NO* ARVORE_PREFIXO; 
 
