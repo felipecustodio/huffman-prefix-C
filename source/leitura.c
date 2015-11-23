@@ -41,7 +41,7 @@ char* ler_string() {
 void ler_arquivo(char **preordem, char **mensagem) {
 
 	char *nome_arquivo = NULL;
-	printf("\tDigite o nome do arquivo a ser lido: ");
+	printf("\tNome do arquivo: ");
 	nome_arquivo = ler_string();
 
 	FILE *arquivo = fopen(nome_arquivo, "r");

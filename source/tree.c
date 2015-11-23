@@ -30,6 +30,7 @@ int adicionar_no(NO **inicio, char* percurso, int indice) {
 	} else {
 		return (indice);
 	}
+
 }
 
 int no_externo(NO* teste) {

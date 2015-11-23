@@ -5,7 +5,7 @@
 #include "tree.h"
 #include "decode.h"
 
-// Função auxiliar para concatenar codificação do alfabeto
+// Função auxiliar para concatenar inteiros
 unsigned concatenar(unsigned x, unsigned y) {
     unsigned potencia = 10;
     while(y >= potencia) {
@@ -20,7 +20,7 @@ double bits(int codigo) {
 	if(codigo == 0) {
 		tamanho = 1;
 	} else {
-		tamanho = floor(log10(abs(codigo))) + 1;
+		tamanho = (floor(log10(abs(codigo))) + 1);
 	}
 	return (tamanho);
 }
