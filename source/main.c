@@ -4,8 +4,7 @@
 #include "decode.h"
 #include "leitura.h"
 
-int main(int argc, char const *argv[]) {
-	
+int main(int argc, char const *argv[]) {	
 	// system("clear"); // Limpar terminal após compilação
 	// Definições
 	ARVORE_PREFIXO arvore;
@@ -20,6 +19,9 @@ int main(int argc, char const *argv[]) {
 
 	// Criar árvore a partir da entrada
 	adicionar_no(&arvore, percurso, 0);
+ 	
+	printf("\t%s\n\t", percurso);
+	pre_ordem(arvore);
 
 	// Decodificar alfabeto
 	tabela();

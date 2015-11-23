@@ -7,12 +7,13 @@
 #include "decode.h"
 
 // Função auxiliar para concatenar inteiros
-unsigned concatenar(unsigned x, unsigned y) {
+// *** bug de overflow provavelmente aqui ***
+unsigned long concatenar(unsigned x, unsigned y) {
     unsigned potencia = 10;
     while(y >= potencia) {
         potencia *= 10;
     }
-    return (x * potencia + y);        
+    return (x * potencia + y);     
 }
 
 // Calcular tamanho em bits do código de um caractere
@@ -75,7 +76,7 @@ void descomprime(ARVORE_PREFIXO arvore, char* comprimida) {
 			}
 		}
 		// Inserir caractere do nó externo na mensagem descomprimida
-		printf("%c", atual->caractere);
+		// printf("%c", atual->caractere); // *** debug ***
 		descomprimida = (char*)realloc(descomprimida, sizeof(char) * total_caracteres + 1);
 		descomprimida[total_caracteres] = atual->caractere;
 		total_caracteres++;

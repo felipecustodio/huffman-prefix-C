@@ -12,7 +12,8 @@ void criar_no(NO **novo) {
 	} 
 }
 
-// transformar entrada em arvore
+// Transformar entrada em arvore
+// *** bug de /0 ***
 int adicionar_no(NO **inicio, char *percurso, int indice) {
 
 	int aux; // controlador do índice dentro das chamadas recursivas
