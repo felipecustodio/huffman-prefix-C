@@ -1,49 +1,36 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <math.h>
-#include <ctype.h>
 #include "tree.h"
 #include "decode.h"
 
-// Função auxiliar para concatenar inteiros
-// *** bug de overflow provavelmente aqui ***
-unsigned long concatenar(unsigned x, unsigned y) {
-    unsigned potencia = 10;
-    while(y >= potencia) {
-        potencia *= 10;
-    }
-    return (x * potencia + y);     
+// Função auxiliar para concatenar string e caractere
+char *concatenar(char *codigo, char novo) {
+	size_t tamanho = strlen(codigo);
+    char *novo_codigo = (char*)malloc(tamanho + 2); // 2 novos espaços: [ novo ] [ /0 ]
+	strcpy(novo_codigo, codigo);
+	novo_codigo[tamanho] = novo;
+	novo_codigo[tamanho + 1] = '\0';
+	return novo_codigo;
 }
 
-// Calcular tamanho em bits do código de um caractere
-double bits(int codigo) {
-	double tamanho;
-	if(codigo == 0) {
-		tamanho = 1;
-	} else {
-		tamanho = (floor(log10(abs(codigo))) + 1);
-	}
-	return (tamanho);
-}
-
-// Tabela
+// Imprime cabeçalho
 void tabela() {
 	printf("\n\tcaractere bits codificação\n");
 	printf("\t--------------------------\n");
 }
 
 // Imprimir alfabeto em pré-ordem
-void imprime_alfabeto(NO *raiz, int codigo) {
+void dicionario(NO *raiz, char *codigo) {
 	
 	// Impressão do caractere, número de bits e seu código na árvore
 	if (raiz != NULL) {
 		if (raiz->caractere != '*') {
-			printf("\t%c\t%.0lf\t%d\n", raiz->caractere, bits(codigo), codigo);
+			printf("\t%c\t%d\t%s\n", raiz->caractere, strlen(codigo), codigo);
 		}
 		// Chamadas de pré-ordem
-		imprime_alfabeto(raiz->esquerda, concatenar(codigo, 0)); 
-		imprime_alfabeto(raiz->direita, concatenar(codigo, 1)); 
+		dicionario(raiz->esquerda, concatenar(codigo, '0')); 
+		dicionario(raiz->direita, concatenar(codigo, '1')); 
 	}
 }
 
@@ -76,7 +63,6 @@ void descomprime(ARVORE_PREFIXO arvore, char* comprimida) {
 			}
 		}
 		// Inserir caractere do nó externo na mensagem descomprimida
-		// printf("%c", atual->caractere); // *** debug ***
 		descomprimida = (char*)realloc(descomprimida, sizeof(char) * total_caracteres + 1);
 		descomprimida[total_caracteres] = atual->caractere;
 		total_caracteres++;

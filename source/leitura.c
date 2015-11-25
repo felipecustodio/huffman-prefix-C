@@ -49,12 +49,13 @@ void ler_arquivo(char **preordem, char **mensagem) {
 	FILE *arquivo = fopen(nome_arquivo, "r");
 	if (arquivo == NULL) {
 		printf("\tO arquivo não pôde ser aberto.\n");
-		exit(0);
+		free(nome_arquivo);
+		free(arquivo);
+		exit (0);
 	}
 
 	*(preordem) = ler_string_arquivo(arquivo);
 	*(mensagem) = ler_string_arquivo(arquivo);
 	fclose(arquivo);
 	free(nome_arquivo);
-
 }

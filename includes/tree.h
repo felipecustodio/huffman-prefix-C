@@ -1,4 +1,4 @@
-#include <stdio.h>
+ #include <stdio.h>
 #include <stdlib.h>
 
 // Definições
@@ -20,7 +20,7 @@ struct no {
 };
 
 void criar_no(NO **novo);
-int adicionar_no(NO **inicio, char* percurso, int indice);
+char* adicionar_no(NO **inicio, char* percurso);
 int no_externo(NO *teste);
 void pre_ordem(NO *raiz);
 void apagar_arvore(NO *raiz);

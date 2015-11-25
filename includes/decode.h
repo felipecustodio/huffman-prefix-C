@@ -2,7 +2,7 @@
 #define __DECODE_H
 
 // Alfabeto
-void imprime_alfabeto(NO *raiz, int codigo);
+void dicionario(NO *raiz, char *codigo);
 // Descompressão
 void descomprime(ARVORE_PREFIXO arvore, char* comprimida);
 // Auxiliar / Impressão

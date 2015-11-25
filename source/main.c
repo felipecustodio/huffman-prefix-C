@@ -5,11 +5,12 @@
 #include "leitura.h"
 
 int main(int argc, char const *argv[]) {	
+	
 	// system("clear"); // Limpar terminal após compilação
-	// Definições
-	ARVORE_PREFIXO arvore;
-	criar_no(&arvore);
+	// ********* .h estão desatualizados ************
 
+	// Definições
+	ARVORE_PREFIXO arvore = NULL;
 	char *percurso = NULL;
 	char *mensagem = NULL;
 	
@@ -18,14 +19,14 @@ int main(int argc, char const *argv[]) {
 	ler_arquivo(&percurso, &mensagem);
 
 	// Criar árvore a partir da entrada
-	adicionar_no(&arvore, percurso, 0);
+	adicionar_no(&arvore, percurso);
  	
 	printf("\t%s\n\t", percurso);
 	pre_ordem(arvore);
 
 	// Decodificar alfabeto
 	tabela();
-	imprime_alfabeto(arvore, 0);
+	dicionario(arvore, "0");
 
 	// Descomprimir mensagem
 	descomprime(arvore, mensagem); 
