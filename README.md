@@ -16,7 +16,7 @@ Editor: Sublime Text 3 (sem uso de IDE).
 
 ## Créditos
 
-Felipe Scrochio Custódio
+Felipe Scrochio Custódio, Danilo de Moraes Costa
 
 ## Licença
 
