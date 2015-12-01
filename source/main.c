@@ -1,3 +1,30 @@
+/*----------------------------------------------------
+ICMC - USP
+BCC - 2015
+SCC0202 - Algoritmos e Estruturas de Dados I
+
+           \/ |    |/
+        \/ / \||/  /_/___/_
+         \/   |/ \/
+    _\__\_\   |  /_____/_
+           \  | /          /
+  __ _-----`  |{,-----------~
+            \ }{
+             }{{
+             }}{
+             {{}
+       , -=-~{ .-^- _
+             `}
+              {
+
+Projeto 03 - Código Prefixo
+
+Alunos	:	Felipe Scrochio Custodio	9442688
+			Danilo de Moraes Costa		8921972
+
+Programa compilado/testado em ambiente Linux
+------------------------------------------------------*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "tree.h"
@@ -6,8 +33,9 @@
 
 int main(int argc, char const *argv[]) {	
 	
-	// system("clear"); // Limpar terminal após compilação
-	// ********* .h estão desatualizados ************
+	// Para Windows: 
+	// system("cls");
+	system("clear"); // Limpar terminal após compilação
 
 	// Definições
 	ARVORE_PREFIXO arvore = NULL;
@@ -20,10 +48,7 @@ int main(int argc, char const *argv[]) {
 
 	// Criar árvore a partir da entrada
 	adicionar_no(&arvore, percurso);
- 	
-	printf("\t%s\n\t", percurso);
-	pre_ordem(arvore);
-
+	
 	// Decodificar alfabeto
 	tabela();
 	dicionario(arvore, "0");

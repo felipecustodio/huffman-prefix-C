@@ -4,20 +4,52 @@
 		"selected_items":
 		[
 			[
+				"to",
+				"total_caracteres"
+			],
+			[
 				"pre",
 				"pre_ordem	(tree.c)"
 			],
 			[
-				"ler_",
-				"ler_string_arquivo"
-			],
-			[
-				"arvore",
-				"arvore_entrada"
+				"tota",
+				"total_bits"
 			],
 			[
 				"total",
 				"total_caracteres"
+			],
+			[
+				"no",
+				"no_atual"
+			],
+			[
+				"compr",
+				"comprimida"
+			],
+			[
+				"ler_",
+				"ler_arquivo	(leitura.h)"
+			],
+			[
+				"nome",
+				"nome_arquivo"
+			],
+			[
+				"FILHO",
+				"FILHO_ESQ"
+			],
+			[
+				"inserir",
+				"inserir_no"
+			],
+			[
+				"cr",
+				"criar_arvore"
+			],
+			[
+				"arvore",
+				"arvore_entrada"
 			],
 			[
 				"taxa",
@@ -66,10 +98,6 @@
 			[
 				"data",
 				"data"
-			],
-			[
-				"tota",
-				"totalBytes"
 			],
 			[
 				"keyword",
@@ -131,30 +159,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "source/tree.c",
-			"settings":
-			{
-				"buffer_size": 2871,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/main.c",
-			"settings":
-			{
-				"buffer_size": 806,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/decode.c",
-			"settings":
-			{
-				"buffer_size": 2826,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -163,12 +167,12 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 150.0,
-		"last_filter": "destroy",
+		"height": 265.0,
+		"last_filter": "destr",
 		"selected_items":
 		[
 			[
-				"destroy",
+				"destr",
 				"Origami: Destroy Current Pane"
 			],
 			[
@@ -176,12 +180,32 @@
 				"Origami: Create Pane on the Right"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
+				"destroy",
+				"Origami: Destroy Current Pane"
 			],
 			[
-				"color",
-				"Colorsublime: Install Theme"
+				"block",
+				"Toggle Block Comment"
+			],
+			[
+				"togg",
+				"Toggle Comment"
+			],
+			[
+				"tog",
+				"Toggle Comment"
+			],
+			[
+				"toggle",
+				"Toggle Comment"
+			],
+			[
+				"destory",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
 			],
 			[
 				"diff",
@@ -226,10 +250,6 @@
 			[
 				"origamirigh",
 				"Origami: Create Pane on the Right"
-			],
-			[
-				"block",
-				"Toggle Block Comment"
 			],
 			[
 				"git stat",
@@ -282,9 +302,13 @@
 			[
 				"note",
 				"Set Syntax: Note"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
 			]
 		],
-		"width": 211.0
+		"width": 373.0
 	},
 	"console":
 	{
@@ -307,25 +331,33 @@
 	[
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/build",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/entradas",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source"
 	],
 	"file_history":
 	[
-		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/leitura.c",
-		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/main.c",
-		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/Makefile",
-		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes/tree.h",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/decode.c",
-		"/home/crochi/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
-		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/tree.c",
-		"/home/crochi/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
-		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes/decode.h",
-		"/home/crochi/Documents/escroto.c",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes/leitura.h",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/README.md",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/main.c",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes/decode.h",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/tree.c",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/includes/tree.h",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/leitura.c",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/Makefile",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/entradas/pi.pre",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/build/2cities.pre",
+		"/home/crochi/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/debug/arquivos_entrada/abra.pre",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/debug/arquivos_entrada/yabba.pre",
+		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/debug/arquivos_entrada/pi.pre",
+		"/home/crochi/Dropbox/codes/alg1/projeto01-mini-google/Makefile",
+		"/home/crochi/Dropbox/codes/readString.c",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/source/tree (Cerberus's conflicted copy 2015-11-19).c",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/debug/debug.c",
+		"/home/crochi/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
 		"/home/crochi/Dropbox/compsci/SCC0202 Algoritmos 1/ABB - código/ABB.c",
-		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/README.md",
 		"/home/crochi/Dropbox/codes/alg1/projeto03-prefixo/LICENSE",
 		"/home/crochi/Dropbox/codes/alg1/8puzzle (2)/Makefile",
 		"/home/crochi/Dropbox/codes/alg1/8puzzle (2)/source/main.c",
@@ -369,7 +401,6 @@
 		"/home/crochi/Dropbox/codes/alg1/projeto01-mini-google/includes/google.h",
 		"/home/crochi/Dropbox/codes/alg1/backup_minigoogle/projeto01-mini-google/src/google.c",
 		"/home/crochi/Dropbox/codes/alg1/projeto01-mini-google/debug/input_test.c",
-		"/home/crochi/Dropbox/codes/alg1/projeto01-mini-google/Makefile",
 		"/home/crochi/Dropbox/codes/alg1/projeto01-mini-google/build/googlebot.csv",
 		"/home/crochi/Dropbox/codes/alg1/projeto01-mini-google/src/input.c",
 		"/home/crochi/Dropbox/codes/alg1/projeto01-mini-google/googlebot.csv",
@@ -393,7 +424,6 @@
 		"/home/crochi/Dropbox/codes/alg1/ex04 - TAD Pilha/calculadora.h",
 		"/home/crochi/Dropbox/codes/alg1/ex04 - TAD Pilha/debug/debug.c",
 		"/home/crochi/Dropbox/codes/alg1/ex04 - TAD Pilha/main_calculadora.c",
-		"/home/crochi/Dropbox/codes/readString.c",
 		"/home/crochi/Dropbox/codes/alg1/projeto01-mini-google/debug/menu_test.c",
 		"/home/crochi/Dropbox/Codes/alg1/projeto01-mini-google/lista_teste.c",
 		"/home/crochi/Dropbox/Codes/alg1/projeto01-mini-google/src/google.c",
@@ -427,7 +457,7 @@
 	],
 	"find":
 	{
-		"height": 37.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -438,14 +468,31 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
-			"inicio",
-			"esquerda",
-			"percurso",
-			"*",
-			"inicio",
+			"N",
+			"string",
+			"n",
+			"contador",
+			"bits",
+			"mensagem",
+			"MENSAGEM",
+			"mensagem",
+			"MENSAGEM",
+			"mensagem",
+			"src",
+			"counter",
+			"value",
+			"\"",
+			"aux",
+			";",
+			"pnovo",
+			"esq",
+			"ESQ",
+			"esq",
+			"dir",
+			"arvore_binaria",
 			"busca",
 			"aux",
 			"printNode",
@@ -551,24 +598,7 @@
 			"nome_pais",
 			"ouro",
 			"prata",
-			"b",
-			"bronze",
-			"Bronze",
-			"bronze",
-			"atual.prata",
-			"prata",
-			"comparedronze",
-			"prata",
-			"b",
-			"ouro",
-			"atual",
-			"medalBoard.countries",
-			"list",
-			"medalBoard.total",
-			"total",
-			"Board.",
-			"temporary",
-			"medalBoard"
+			"b"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -587,416 +617,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "source/tree.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2871,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								806,
-								806
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"c_time":
-							[
-								128,
-								3,
-								99,
-								100,
-								97,
-								116,
-								101,
-								116,
-								105,
-								109,
-								101,
-								10,
-								100,
-								97,
-								116,
-								101,
-								116,
-								105,
-								109,
-								101,
-								10,
-								113,
-								0,
-								67,
-								10,
-								7,
-								223,
-								11,
-								23,
-								8,
-								17,
-								27,
-								0,
-								0,
-								0,
-								113,
-								1,
-								133,
-								113,
-								2,
-								82,
-								113,
-								3,
-								46
-							],
-							"dfw_is_in_fs": true,
-							"syntax": "Packages/C++/C.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "source/main.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 806,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								453,
-								453
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"c_time":
-							[
-								128,
-								3,
-								99,
-								100,
-								97,
-								116,
-								101,
-								116,
-								105,
-								109,
-								101,
-								10,
-								100,
-								97,
-								116,
-								101,
-								116,
-								105,
-								109,
-								101,
-								10,
-								113,
-								0,
-								67,
-								10,
-								7,
-								223,
-								11,
-								23,
-								16,
-								55,
-								51,
-								0,
-								0,
-								0,
-								113,
-								1,
-								133,
-								113,
-								2,
-								82,
-								113,
-								3,
-								46
-							],
-							"syntax": "Packages/C++/C.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "source/decode.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2826,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1977,
-								1977
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"c_time":
-							[
-								128,
-								3,
-								99,
-								100,
-								97,
-								116,
-								101,
-								116,
-								105,
-								109,
-								101,
-								10,
-								100,
-								97,
-								116,
-								101,
-								116,
-								105,
-								109,
-								101,
-								10,
-								113,
-								0,
-								67,
-								10,
-								7,
-								223,
-								11,
-								23,
-								8,
-								16,
-								55,
-								0,
-								0,
-								0,
-								113,
-								1,
-								133,
-								113,
-								2,
-								82,
-								113,
-								3,
-								46
-							],
-							"dfw_is_in_fs": true,
-							"syntax": "Packages/C++/C.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1044.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1056,26 +678,6 @@
 		"last_filter": "",
 		"selected_items":
 		[
-			[
-				"tree.c",
-				"source/tree.c"
-			],
-			[
-				"decode.c",
-				"source/decode.c"
-			],
-			[
-				"makefi",
-				"Makefile"
-			],
-			[
-				"leitura.c",
-				"source/leitura.c"
-			],
-			[
-				"main",
-				"source/main.c"
-			]
 		],
 		"width": 0.0
 	},

@@ -26,7 +26,8 @@ void dicionario(NO *raiz, char *codigo) {
 	// Impressão do caractere, número de bits e seu código na árvore
 	if (raiz != NULL) {
 		if (raiz->caractere != '*') {
-			printf("\t%c\t%d\t%s\n", raiz->caractere, strlen(codigo), codigo);
+			printf("\t%c\t%d\t%s\n", raiz->caractere, (int)(strlen(codigo)-1), codigo+1);
+			// endereço da string + 1 => remover o 0 a mais gerado pelo algoritmo de concatenar
 		}
 		// Chamadas de pré-ordem
 		dicionario(raiz->esquerda, concatenar(codigo, '0')); 
@@ -62,6 +63,7 @@ void descomprime(ARVORE_PREFIXO arvore, char* comprimida) {
 				i++;
 			}
 		}
+
 		// Inserir caractere do nó externo na mensagem descomprimida
 		descomprimida = (char*)realloc(descomprimida, sizeof(char) * total_caracteres + 1);
 		descomprimida[total_caracteres] = atual->caractere;
@@ -87,5 +89,6 @@ void descomprime(ARVORE_PREFIXO arvore, char* comprimida) {
 	printf("\tTaxa de compressão = %lf%%\n\n", taxa_compressao);
 	
 	free(descomprimida);
+	free(atual);
 	
 }

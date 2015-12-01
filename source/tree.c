@@ -9,13 +9,13 @@ void criar_no(NO **novo) {
 	(*novo) = (NO*)malloc(sizeof(NO)); 
 	if ((*novo) != NULL) { 
 		(*novo)->esquerda = NULL; 
-		(*novo)->direita = NULL; 
+		(*novo)->direita = NULL;
 	} 
 }
 
 // Transformar entrada em arvore
 char* adicionar_no(NO **inicio, char *entrada) {
-
+	if (*entrada == 0) return (entrada);
 	criar_no(inicio);
 	(*inicio)->caractere = *entrada;
 	if(*entrada == '*') {

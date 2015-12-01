@@ -8,9 +8,11 @@ O programa foi escrito, compilado e testado em ambiente Linux com distro Ubuntu.
 Make compilando com gcc + flags adicionais de warnings.
 Editor: Sublime Text 3 (sem uso de IDE).
 
-## Organização dos Arquivos
+## Utilização
 
-build, includes, source, debug
+    Opções:
+    a) Executar 'make' na pasta principal
+    b) Executar ./prefix na pasta build
 
 ## Créditos
 

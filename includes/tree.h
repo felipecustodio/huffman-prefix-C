@@ -20,7 +20,7 @@ struct no {
 };
 
 void criar_no(NO **novo);
-char* adicionar_no(NO **inicio, char* percurso);
+char* adicionar_no(NO **inicio, char *entrada);
 int no_externo(NO *teste);
 void pre_ordem(NO *raiz);
 void apagar_arvore(NO *raiz);
