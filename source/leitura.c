@@ -9,7 +9,9 @@ char* ler_string_arquivo(FILE *arquivo) {
 	char *string = NULL;
 	char aux = '@';
 	int contador = 0;
+	// Ler até ENTER
 	while (aux != 10) {
+		// Ler caractere direto do arquivo e armazenar em string
 		fscanf(arquivo, "%c", &aux);
 		string = (char*)realloc(string, sizeof(char*) * contador + 1);
 		string[contador] = aux;

@@ -38,10 +38,15 @@ void dicionario(NO *raiz, char *codigo) {
 // Funções de Descompressão
 void descomprime(ARVORE_PREFIXO arvore, char* comprimida) {
 
+	// Mensagem descomprimida
 	char *descomprimida = NULL;
+	// Bits da mensagem sem compressão
 	int total_bits = 0;
+	// Bits da mensagem com compressão
 	int bits_descomprimidos = 0;
+	// Caracteres da mensagem
 	int total_caracteres = 0;
+	// Taxa de compressão da mensagems
 	double taxa_compressao = 0;
 
 	// Algoritmo de descompressão da mensagem
@@ -52,6 +57,7 @@ void descomprime(ARVORE_PREFIXO arvore, char* comprimida) {
 	while(i < strlen(comprimida)) {
 		// Alcançar nó externo da árvore
 		while(!(no_externo(atual))) {
+			// Ler um bit da mensagem
 			bit = comprimida[i];
 			// 0 - Vá para a esquerda
 			if (bit == '0') {
