@@ -56,6 +56,7 @@ void ler_arquivo(char **preordem, char **mensagem) {
 		exit (0);
 	}
 
+	// Preencher strings de entrada na main
 	*(preordem) = ler_string_arquivo(arquivo);
 	*(mensagem) = ler_string_arquivo(arquivo);
 	fclose(arquivo);

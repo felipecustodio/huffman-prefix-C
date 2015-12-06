@@ -23,6 +23,11 @@ Alunos	:	Felipe Scrochio Custodio	9442688
 			Danilo de Moraes Costa		8921972
 
 Programa compilado/testado em ambiente Linux
+
+Opções:
+    a) Executar 'make' na pasta principal para compilar e rodar
+    b) Executar 'make run' na pasta principal apenas para rodar
+
 ------------------------------------------------------*/
 
 #include <stdio.h>
@@ -41,8 +46,10 @@ int main(int argc, char const *argv[]) {
 	ARVORE_PREFIXO arvore = NULL;
 	char *percurso = NULL;
 	char *mensagem = NULL;
+	char *codigo = NULL;
 	
 	// Leitura
+	printf("\n\tPROJETO 03 - CÓDIGO PREFIXO\n\n");
 	printf("\t./entradas/nome_do_arquivo.pre\n");
 	ler_arquivo(&percurso, &mensagem);
 
@@ -51,7 +58,12 @@ int main(int argc, char const *argv[]) {
 	
 	// Decodificar alfabeto
 	tabela();
-	dicionario(arvore, "0");
+	// Código inicial para algoritmo de concatenar
+	codigo = (char*)malloc(sizeof(char) * 2);
+	codigo[0] = '0';
+	codigo[1] = '\0';
+	// Primeira chamada para percorrer árvore
+	dicionario(arvore, codigo);
 
 	// Descomprimir mensagem
 	descomprime(arvore, mensagem); 

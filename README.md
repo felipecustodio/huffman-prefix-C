@@ -11,8 +11,8 @@ Editor: Sublime Text 3 (sem uso de IDE).
 ## Utilização
 
     Opções:
-    a) Executar 'make' na pasta principal
-    b) Executar ./prefix na pasta build
+    a) Executar 'make' na pasta principal para compilar e rodar
+    b) Executar 'make run' na pasta principal apenas para rodar
 
 ## Créditos
 

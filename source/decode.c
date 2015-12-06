@@ -4,15 +4,16 @@
 #include "tree.h"
 #include "decode.h"
 
-// Função auxiliar para concatenar string e caractere
+//Função auxiliar para concatenar string e caractere
 char *concatenar(char *codigo, char novo) {
 	size_t tamanho = strlen(codigo);
-    char *novo_codigo = (char*)malloc(tamanho + 2); // 2 novos espaços: [ novo ] [ /0 ]
+    char *novo_codigo = (char*)malloc(tamanho + 2); 
+    // 2 novos espaços: [ char novo ] [ \0 ]
 	strcpy(novo_codigo, codigo);
-	novo_codigo[tamanho] = novo;
+	novo_codigo[tamanho] = novo; // substitui o antigo \0
 	novo_codigo[tamanho + 1] = '\0';
 	return novo_codigo;
-}
+} 
 
 // Imprime cabeçalho
 void tabela() {
@@ -31,8 +32,11 @@ void dicionario(NO *raiz, char *codigo) {
 		}
 		// Chamadas de pré-ordem
 		dicionario(raiz->esquerda, concatenar(codigo, '0')); 
-		dicionario(raiz->direita, concatenar(codigo, '1')); 
+		dicionario(raiz->direita, concatenar(codigo, '1'));
 	}
+
+	free(codigo);
+
 }
 
 // Funções de Descompressão
@@ -95,6 +99,5 @@ void descomprime(ARVORE_PREFIXO arvore, char* comprimida) {
 	printf("\tTaxa de compressão = %lf%%\n\n", taxa_compressao);
 	
 	free(descomprimida);
-	free(atual);
 	
 }
